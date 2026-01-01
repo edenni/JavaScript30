@@ -63,14 +63,14 @@
         const key = document.querySelector(`div[data-key="${e.code}"]`);
         const audio = document.querySelector(`audio[data-key="${e.code}"]`);
         if (!audio) return;
-        key.setAttribute("class", "playing key");
+        key.classList.add("playing");
         audio.currentTime = 0;
         audio.play();
       });
       window.addEventListener("keyup", (e) => {
         const key = document.querySelector(`div[data-key="${e.code}"]`);
         if (!key) return;
-        key.setAttribute("class", "key");
+        key.classList.remove("playing");
       });
     </script>
   </body>
