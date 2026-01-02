@@ -13,7 +13,6 @@
         <div class="hand second-hand"></div>
       </div>
     </div>
-    <button type="button" name="button" onclick="rotate()">transform</button>
 
     <style>
       html {
@@ -62,6 +61,23 @@
         top: 50%;
         transform-origin: right;
         transform: rotate(90deg);
+      }
+
+      .hour-hand {
+        height: 7px;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+      }
+
+      .min-hand {
+        height: 5px;
+      }
+
+      .second-hand {
+        height: 3px;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        background-color: #cb0909;
       }
     </style>
 
